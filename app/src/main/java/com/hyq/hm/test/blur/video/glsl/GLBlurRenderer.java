@@ -103,6 +103,7 @@ public class GLBlurRenderer {
         GLES20.glBindBuffer(GLES20.GL_ARRAY_BUFFER, bos[1]);
         GLES20.glBufferData(GLES20.GL_ARRAY_BUFFER, textureVertexData.length * 4, textureVertexBuffer, GLES20.GL_STATIC_DRAW);
         GLES20.glBindBuffer(GLES20.GL_ARRAY_BUFFER, 0);
+
         GLES20.glGenTextures(textures.length, textures, 0);
 
         GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, textures[0]);

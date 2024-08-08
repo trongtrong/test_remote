@@ -215,6 +215,7 @@ public class MainActivity extends AppCompatActivity {
                         seekBar.setProgress(progress);
                     }
                     blurScale = progress/100.0f;
+                    Log.d("sizeSeekBar", " blurScale ==  " +blurScale);
                     sizeTextView.setText("size:"+(int)(blurScale*100)+"%");
                 }
             }
@@ -233,7 +234,7 @@ public class MainActivity extends AppCompatActivity {
 
     private SimpleExoPlayer player;
 
-    private String videoPath = Environment.getExternalStorageDirectory().getAbsolutePath()+"/xxx/video.mp4";
+    private String videoPath = Environment.getExternalStorageDirectory().getAbsolutePath()+"/DCIM/TextOnVideo/1707585889466.mp4";
     private void initPlayer(){
         
         Log.d("==============","videoPath = "+videoPath);
